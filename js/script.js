@@ -8,8 +8,12 @@ $(document).ready(function (){
 
     // $('p').hover(function(){console.log('you hovered on :' , this);});
 
-    $('p').dblclick(function(){
-        console.log('you double clicked on : ',this);
-        console.log('thanks');
-    });
-});
+    // $('p').dblclick(function(){
+    //     console.log('you double clicked on : ',this);
+    //     console.log('thanks');
+    // });
+
+    $('#btn').click(function(){
+        $('#text').toggle(1000);
+    })
+}); 
