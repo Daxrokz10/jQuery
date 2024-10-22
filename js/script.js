@@ -13,9 +13,28 @@ $(document).ready(function (){
     //     console.log('thanks');
     // });
 
-    $('#btn').click(function(){
-        $('#text').toggle(1000, function(){
-            console.log('toggled');
-        });
+    // $('#btn').click(function(){
+    //     $('#text').fadeOut(1000, function(){
+    //         console.log('faded out');
+    //     });
+    //     $('#text').fadeIn(1000, function(){
+    //         console.log('faded in');
+    //     });
+    // });
+
+    let isTextVisible = true; // Flag to track the visibility of the text
+
+    $('#btn').click(function() {
+        if (isTextVisible) {
+            $('#text').fadeOut(1000, function() {
+                console.log('faded out');
+                isTextVisible = false; // Update the flag to indicate the text is now hidden
+            });
+        } else {
+            $('#text').fadeIn(1000, function() {
+                console.log('faded in');
+                isTextVisible = true; // Update the flag to indicate the text is now visible
+            });
+        }
     });
 }); 
