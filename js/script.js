@@ -14,6 +14,8 @@ $(document).ready(function (){
     // });
 
     $('#btn').click(function(){
-        $('#text').toggle(1000);
-    })
+        $('#text').toggle(1000, function(){
+            console.log('toggled');
+        });
+    });
 }); 
