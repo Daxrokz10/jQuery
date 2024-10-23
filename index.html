@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning jQ</title>
+    <title>jQuery Color Change Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/script.js"></script>
+    <style>
+        #colorBox {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
-    <button id="btn">Toggle</button>
-    <p id="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores accusamus culpa suscipit tempore necessitatibus laudantium ratione numquam commodi sint dolorum?</p>
-
+    <button id="colorBtn">Change Color</button>
+    <div id="colorBox"></div>
+    <p id="colorName"></p>
 </body>
-<script src="./js/jquery-3.7.1.min.js"></script>
-<script src="./js/script.js"></script>
 </html>
