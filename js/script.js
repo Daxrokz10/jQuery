@@ -22,19 +22,26 @@ $(document).ready(function (){
     //     });
     // });
 
-    let isTextVisible = true; // Flag to track the visibility of the text
+    // let isTextVisible = true; // Flag to track the visibility of the text
 
-    $('#btn').click(function() {
-        if (isTextVisible) {
-            $('#text').fadeOut(1000, function() {
-                console.log('faded out');
-                isTextVisible = false; // Update the flag to indicate the text is now hidden
-            });
-        } else {
-            $('#text').fadeIn(1000, function() {
-                console.log('faded in');
-                isTextVisible = true; // Update the flag to indicate the text is now visible
-            });
-        }
-    });
+    // $('#btn').click(function() {
+    //     if (isTextVisible) {
+    //         $('#text').fadeOut(1000, function() {
+    //             console.log('faded out');
+    //             isTextVisible = false; // Update the flag to indicate the text is now hidden
+    //         });
+    //     } else {
+    //         $('#text').fadeIn(1000, function() {
+    //             console.log('faded in');
+    //             isTextVisible = true; // Update the flag to indicate the text is now visible
+    //         });
+    //     } 
+    // });
+
+
+    $('#btn').click(function(){
+        $('#text').hide(function(){
+            console.log("text has been hidden");
+        })
+    })
 }); 
