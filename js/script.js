@@ -69,7 +69,7 @@ $(document).ready(function (){
         currentColorValue = (currentColorValue + 1) % color.length;
         $('#colorBox').css('background-color', color[currentColorValue]);
         $('#colorName').text(colorName[currentColorValue]); 
-        console.log('color has been changed');
+        console.log('color has been changed to:' + colorName[currentColorValue]);
     });
 
 
